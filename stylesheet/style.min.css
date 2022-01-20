@@ -123,6 +123,10 @@
   margin-left: 2em;
 }
 
+.section-separator {
+  height: 60vh;
+}
+
 .bxslider {
   position: relative;
 }
