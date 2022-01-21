@@ -2,11 +2,12 @@ $(document).ready(function () {
 
     /* bxslider */
 
-
+        // $('.bxslider').bxSlider();
     $('.slider').bxSlider({
         mode: 'fade',
         auto: true,
         speed: 2000,
+        pager: true,
 
         /* Controls must be true */
         controls: true,
@@ -30,7 +31,6 @@ $(document).ready(function () {
         // prevText: '<img src="../assets/images/product-images/furniture-image-2.png" alt="furniture image" class="img-fluid" style="\width:50px\">',
         // nextText: '<img src="../assets/images/product-images/furniture-image-3.png" alt="furniture image" class="img-fluid" style="\width:50px\">',
 
-        pager: false,
         adaptiveHeight: true
 
     });

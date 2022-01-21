@@ -16,8 +16,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
-    <!-- aos animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- fontawesome 5.15.3 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -27,6 +25,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- bootstrap 4.6.0 css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -45,31 +46,42 @@
 
     <div class="bxslider">
         <div class="slider">
-            <div>
-                <img src="./assets/images/banner-1.jpg" alt="" class="img-fluid">
-                <div class="hero-caption">
-                    <div class="title" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000"
-                        data-aos-easing="ease-in-out" data-aos-once="true">Harness energy from the sun, for
-                        uninterrupted
-                        power supply</div>
-                </div>
+            <div class="slide-item">
+                <!-- <img src="./assets/images/banner-1.jpg" alt="" class="img-fluid"> -->
                 <div class="play-button" data-toggle="modal" data-target="#exampleModal-1">
                     <i class="far fa-play-circle"></i>
+                </div>
+                <div class="hero-caption">
+                    <!-- <div class="title" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out" data-aos-once="true">Harness energy from the sun, for
+                        uninterrupted
+                        power supply</div> -->
+                    <div class="title animate__animated animate__fadeInUp">Harness energy from the sun, for
+                        uninterrupted
+                        power supply</div>
+                    <div>
+                        <button class="btn call-to-action">HELP?</button>
+                    </div>
                 </div>
                 <div class="info-label text-center">
                     <div class="inner">Know the power of your appliances for your panel</div>
                 </div>
             </div>
-            <div>
-                <img src="./assets/images/banner-2.jpg" alt="" class="img-fluid">
-                <div class="hero-caption">
-                    <div class="title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"
-                        data-aos-easing="ease-in-out" data-aos-once="true">Harness energy from the sun, for
-                        uninterrupted
-                        power supply</div>
-                </div>
+            <div class="slide-item">
+                <!-- <img src="./assets/images/banner-2.jpg" alt="" class="img-fluid"> -->
                 <div class="play-button" data-toggle="modal" data-target="#exampleModal-1">
                     <i class="far fa-play-circle"></i>
+                </div>
+                <div class="hero-caption">
+                    <!-- <div class="title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out" data-aos-once="true">Harness energy from the sun, for
+                        uninterrupted
+                        power supply</div> -->
+                    <div class="title animate__animated animate__fadeInUp">Know the power of your appliances for your
+                        panel</div>
+                    <div>
+                        <button class="btn call-to-action">HELP?</button>
+                    </div>
                 </div>
                 <div class="info-label text-center">
                     <div class="inner">Looking to acquire our products</div>
@@ -113,7 +125,6 @@
         </nav>
     </div>
 
-
     <!-- Modal 1 -->
     <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <!-- modal-dialog-centered -->
@@ -152,7 +163,6 @@
         </div>
     </div>
 
-
     <!-- section separator -->
     <div class="section-separator">
     </div>
@@ -160,15 +170,19 @@
 
     <!-- SECTION VIDEO -->
     <section>
-        <div style="position:relative">
-            <img src="./assets/images/banner-1.jpg" alt="" class="img-fluid">
-            <div class="hero-caption">
-                <div class="title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"
-                    data-aos-easing="ease-in-out" data-aos-once="true">Make the future 
-                    bright with solar power</div>
-            </div>
+        <div class="slide-item" style="position: relative;">
+            <!-- <img src="./assets/images/banner-2.jpg" alt="" class="img-fluid"> -->
             <div class="play-button" data-toggle="modal" data-target="#exampleModal-1">
                 <i class="far fa-play-circle"></i>
+            </div>
+            <div class="hero-caption">
+                <!-- <div class="title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out" data-aos-once="true">Harness energy from the sun, for
+                    uninterrupted
+                    power supply</div> -->
+                <div class="title animate__animated animate__fadeInUp">Make the future 
+                    bright with solar power</div>
+                <div class="section-image-tagline">mainland solar is here to do just that.</div>
             </div>
         </div>
     </section>
@@ -186,14 +200,6 @@
         crossorigin="anonymous"></script>
     <script src="./assets/plugins/bootstrap-4.6/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/plugins/bootstrap-4.6/dist/js/bootstrap.min.js"></script>
-    <!-- aos animation -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            offset: 100, // offset (in px) from the original trigger point
-            anchorPlacement: 'top-bottom',// defines which position of the element regarding to window should trigger the animation
-        });
-    </script>
     <!-- bxSlider -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
