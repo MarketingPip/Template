@@ -7,6 +7,7 @@ $(document).ready(function () {
         mode: 'fade',
         auto: true,
         speed: 2000,
+        pause: 10000,
         pager: true,
 
         /* Controls must be true */

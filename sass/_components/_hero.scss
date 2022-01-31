@@ -19,19 +19,21 @@ $robotoFont: "Roboto", sans-serif;
     bottom: 1em;
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
-    opacity: .3;
-    background: #FFFFFF;
-    border: 1px solid #209E02;
+    opacity: 0.3;
+    background: #ffffff;
+    border: 1px solid #209e02;
     width: 10px;
     height: 10px;
     @include mixins.transition(all 300ms ease-in-out);
-    &:hover{
-        opacity: .7;
+    &:hover {
+        opacity: 0.7;
     }
 }
-.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
-    background: #209E02;
-    border: 1px solid #FFFFFF;
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #209e02;
+    border: 1px solid #ffffff;
 }
 
 .bx-wrapper .bx-next {
@@ -68,6 +70,18 @@ $robotoFont: "Roboto", sans-serif;
     }
 }
 
+.banner-video-item {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/banner-2.jpg);
+}
+
 .play-button {
     // position: absolute;
     // top: 40%;
@@ -89,6 +103,7 @@ $robotoFont: "Roboto", sans-serif;
     z-index: 2;
     margin: 0 auto;
     padding: 0 1em;
+    display: block;
 
     .title {
         max-width: 613px;
@@ -117,7 +132,7 @@ $robotoFont: "Roboto", sans-serif;
         padding-left: 2em;
         margin-top: 1em;
         transition: all 300ms ease-in-out;
-        &:hover{
+        &:hover {
             background-color: #1e6e09;
         }
     }
@@ -275,7 +290,7 @@ $robotoFont: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 600;
     color: #ffffff;
-    font-size: .6rem;
+    font-size: 0.6rem;
 }
 
 @include mixins.maxminmq(1220px, 768px) {
