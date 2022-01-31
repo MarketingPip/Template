@@ -62,6 +62,9 @@ $robotoFont: "Roboto", sans-serif;
     height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;
+    @include mixins.maxmq(768px) {
+        background-position-x: right;
+    }
     &:nth-of-type(1) {
         background-image: url(../assets/images/banner-1.jpg);
     }
@@ -81,7 +84,7 @@ $robotoFont: "Roboto", sans-serif;
     background-repeat: no-repeat;
     background-image: url(../assets/images/banner-2.jpg);
 
-    @include mixins.maxmq(768px){
+    @include mixins.maxmq(768px) {
         background-position-x: right;
     }
 }

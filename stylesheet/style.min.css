@@ -56,6 +56,11 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 768px) {
+  .slide-item {
+    background-position-x: right;
+  }
+}
 .slide-item:nth-of-type(1) {
   background-image: url(../assets/images/banner-1.jpg);
 }
