@@ -80,6 +80,10 @@ $robotoFont: "Roboto", sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../assets/images/banner-2.jpg);
+
+    @include mixins.maxmq(768px){
+        background-position-x: right;
+    }
 }
 
 .play-button {

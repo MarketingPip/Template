@@ -73,6 +73,11 @@
   background-repeat: no-repeat;
   background-image: url(../assets/images/banner-2.jpg);
 }
+@media (max-width: 768px) {
+  .banner-video-item {
+    background-position-x: right;
+  }
+}
 
 .play-button {
   text-align: center;
